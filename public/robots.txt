@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashishdas9077.github.io/LocalRide-Download/sitemap.xml

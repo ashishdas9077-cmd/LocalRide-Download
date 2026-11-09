@@ -1,0 +1,6 @@
+{
+  "name": "LocalRide",
+  "description": "LocalRide – Your Local Ride Booking App. Official website and APK download portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
