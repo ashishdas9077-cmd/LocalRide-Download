@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ashishdas9077.github.io/LocalRide-Download/sitemap.xml
+Sitemap: https://ashishdas9077-cmd.github.io/LocalRide-Download/sitemap.xml

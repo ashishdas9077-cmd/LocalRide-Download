@@ -36,7 +36,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">1. Website Operations & Data Handling</h2>
           <p>
-            The LocalRide official website (<span className="font-mono text-xs text-slate-800">ashishdas9077.github.io/LocalRide-Download/</span>) is a static web application hosted on GitHub Pages.
+            The LocalRide official website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) is a static web application hosted on GitHub Pages.
           </p>
           <p>
             This website does not require user accounts, does not collect personal contact information, does not use advertising trackers, and does not set tracking cookies in your browser.
@@ -49,7 +49,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             To display the most recent application version number, release date, and official APK download link, this website sends client-side HTTP requests directly to the public GitHub API:
           </p>
           <div className="p-3 bg-slate-50 rounded-lg font-mono text-xs text-slate-800 break-all border border-slate-200">
-            https://api.github.com/repos/ashishdas9077/LocalRide-Download/releases
+            https://api.github.com/repos/ashishdas9077-cmd/LocalRide-Download/releases
           </div>
           <p>
             These requests are unauthenticated and public. GitHub may log standard network metadata (such as IP addresses and user-agent strings) in accordance with GitHub's standard Privacy Statement.

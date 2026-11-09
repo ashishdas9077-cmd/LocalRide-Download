@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to LocalRide...</title>
+    <script>
+      // Redirect direct path requests to HashRouter format on GitHub Pages
+      (function () {
+        var path = window.location.pathname;
+        var repo = 'LocalRide-Download';
+        var baseIndex = path.indexOf('/' + repo);
+        if (baseIndex !== -1) {
+          var subPath = path.substring(baseIndex + repo.length + 1);
+          if (subPath && subPath !== '/' && !subPath.startsWith('#')) {
+            var target = '/' + repo + '/#' + (subPath.startsWith('/') ? subPath : '/' + subPath) + window.location.search;
+            window.location.replace(target);
+            return;
+          }
+        }
+        window.location.replace('/' + repo + '/');
+      })();
+    </script>
+  </head>
+  <body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px; color: #475569;">
+      Redirecting to LocalRide...
+    </p>
+  </body>
+</html>

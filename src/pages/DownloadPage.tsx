@@ -8,15 +8,15 @@ export const DownloadPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [expandedNotes, setExpandedNotes] = useState<Record<number, boolean>>({});
 
-  const loadReleases = async () => {
+  const loadReleases = async (forceRefresh = false) => {
     setLoading(true);
     try {
-      const res = await fetchGitHubReleases();
+      const res = await fetchGitHubReleases(forceRefresh);
       setData(res);
     } catch {
       setData({
         releases: [],
-        sourceRepo: 'ashishdas9077/LocalRide-Download',
+        sourceRepo: 'ashishdas9077-cmd/LocalRide-Download',
         error: 'An unexpected network error occurred while querying GitHub Releases.',
         isRateLimited: false,
       });
@@ -26,7 +26,7 @@ export const DownloadPage: React.FC = () => {
   };
 
   useEffect(() => {
-    loadReleases();
+    loadReleases(false);
   }, []);
 
   const toggleNotes = (id: number) => {
@@ -85,7 +85,7 @@ export const DownloadPage: React.FC = () => {
           </div>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <button
-              onClick={loadReleases}
+              onClick={() => loadReleases(true)}
               className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-amber-900 bg-amber-200/80 hover:bg-amber-200 rounded-lg transition-colors"
             >
               <RefreshCw className="w-3.5 h-3.5" />
@@ -126,7 +126,7 @@ export const DownloadPage: React.FC = () => {
           </div>
           <div>
             <button
-              onClick={loadReleases}
+              onClick={() => loadReleases(true)}
               className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
             >
               <RefreshCw className="w-3.5 h-3.5" />
@@ -153,7 +153,7 @@ export const DownloadPage: React.FC = () => {
               )}
             </h2>
             <button
-              onClick={loadReleases}
+              onClick={() => loadReleases(true)}
               title="Refresh releases from GitHub"
               className="text-xs text-slate-500 hover:text-blue-600 flex items-center gap-1.5 transition-colors"
             >

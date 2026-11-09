@@ -36,7 +36,7 @@ export const TermsPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">1. Acceptance of Terms</h2>
           <p>
-            By accessing this website (<span className="font-mono text-xs text-slate-800">ashishdas9077.github.io/LocalRide-Download/</span>) or downloading the LocalRide Android application package (.apk), you acknowledge and agree to these preliminary terms. If you disagree with any portion of these terms, please refrain from downloading or installing the software.
+            By accessing this website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) or downloading the LocalRide Android application package (.apk), you acknowledge and agree to these preliminary terms. If you disagree with any portion of these terms, please refrain from downloading or installing the software.
           </p>
         </section>
 

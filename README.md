@@ -2,7 +2,7 @@
 
 The official website and APK download distribution portal for **LocalRide**, a community-focused local ride-booking Android application connecting passengers with nearby auto-rickshaws, e-rickshaws, and local taxis.
 
-- **Public Website URL:** [https://ashishdas9077.github.io/LocalRide-Download/](https://ashishdas9077.github.io/LocalRide-Download/)
+- **Public Website URL:** [https://ashishdas9077-cmd.github.io/LocalRide-Download/](https://ashishdas9077-cmd.github.io/LocalRide-Download/)
 - **Public Website Repository:** `ashishdas9077-cmd/LocalRide-Download`
 - **Private Android Source Code Repository:** `ashishdas9077-cmd/LocalRide-AI`
 
@@ -13,7 +13,7 @@ The official website and APK download distribution portal for **LocalRide**, a c
 This website is a modern, responsive, high-performance static web application built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. It is architected specifically to run on **GitHub Pages** with zero backend infrastructure requirements.
 
 ### Key Features
-1. **Dynamic APK Releases:** Automatically queries the public GitHub Releases API (`https://api.github.com/repos/ashishdas9077/LocalRide-Download/releases`) to display the latest stable release, download links, file sizes, and full version history without manual website code updates.
+1. **Dynamic APK Releases:** Automatically queries the public GitHub Releases API (`https://api.github.com/repos/ashishdas9077-cmd/LocalRide-Download/releases`) to display the latest stable release, download links, file sizes, and full version history without manual website code updates.
 2. **HashRouter Navigation:** Ensures that internal page refreshes work reliably on GitHub Pages without requiring server-side 404 URL rewriting.
 3. **Responsive & Mobile-First:** Clean blue-and-white visual identity optimized for high clarity, fast loading on budget Android devices, and low cellular data usage.
 4. **Lightweight Custom SVG Visuals:** Handcrafted SVG illustrations for auto-rickshaws, e-rickshaws, taxis, and app interaction flows with zero external broken image dependencies.
@@ -135,7 +135,7 @@ npx gh-pages -d dist
 2. Under **Build and deployment > Source**:
    - Choose **GitHub Actions** (if using Option A), OR
    - Choose **Deploy from a branch** and select branch `gh-pages` / `/ (root)`.
-3. Your site will be published at `https://ashishdas9077.github.io/LocalRide-Download/`.
+3. Your site will be published at `https://ashishdas9077-cmd.github.io/LocalRide-Download/`.
 
 ---
 
