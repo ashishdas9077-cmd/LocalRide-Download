@@ -46,10 +46,10 @@ export const DownloadPage: React.FC = () => {
           <span>Android Application (.apk)</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Download LocalRide
+          Download OurGo Ride
         </h1>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-          LocalRide is distributed as an Android APK directly through public GitHub Releases. Test the latest builds or access past release versions below.
+          OurGo Ride is distributed as an Android APK directly through public GitHub Releases. Test the latest builds or access past release versions below.
         </p>
       </div>
 
@@ -201,7 +201,7 @@ export const DownloadPage: React.FC = () => {
                     className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-xl shadow-md transition-all w-full sm:w-auto"
                   >
                     <Download className="w-5 h-5" />
-                    <span>Download LocalRide.apk</span>
+                    <span>Download OurGo Ride APK</span>
                   </a>
                 ) : (
                   <div className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-slate-100 text-slate-500 text-sm font-medium">
@@ -334,7 +334,7 @@ export const DownloadPage: React.FC = () => {
             How to Install the APK on Android
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Because LocalRide is installed directly from the APK file rather than Google Play, your device will require a one-time permission.
+            Because OurGo Ride is installed directly from the APK file rather than Google Play, your device will require a one-time permission.
           </p>
         </div>
 
@@ -367,7 +367,7 @@ export const DownloadPage: React.FC = () => {
             <span className="text-xs font-bold text-blue-600 uppercase">Step 4</span>
             <h3 className="font-bold text-sm text-slate-900">Launch & Test</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Tap <span className="font-medium text-slate-800">Install</span>. Once finished, open LocalRide from your app drawer.
+              Tap <span className="font-medium text-slate-800">Install</span>. Once finished, open OurGo Ride from your app drawer.
             </p>
           </div>
         </div>
@@ -375,7 +375,7 @@ export const DownloadPage: React.FC = () => {
         <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-100 flex items-start gap-3">
           <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
           <p className="text-xs text-blue-900 leading-relaxed">
-            <strong>Security Guarantee:</strong> LocalRide APK packages originate exclusively from the official public GitHub Releases repository (<span className="font-mono text-blue-950">ashishdas9077-cmd/LocalRide-Download</span>). Never download APKs from third-party mirrors.
+            <strong>Security Guarantee:</strong> OurGo Ride APK packages originate exclusively from the official public GitHub Releases repository (<span className="font-mono text-blue-950">ashishdas9077-cmd/LocalRide-Download</span>). Never download APKs from third-party mirrors.
           </p>
         </div>
       </section>

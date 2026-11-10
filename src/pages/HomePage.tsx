@@ -13,6 +13,8 @@ import {
 } from '../components/CustomIllustrations.tsx';
 
 export const HomePage: React.FC = () => {
+  const logoSrc = `${import.meta.env.BASE_URL}assets/ourgo-logo.png`;
+
   return (
     <div className="space-y-16 sm:space-y-24">
       {/* 1. Hero Section */}
@@ -20,24 +22,26 @@ export const HomePage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              <span className="w-2 h-2 rounded-full bg-blue-600"></span>
-              <span>Android APK Testing Release</span>
+            <div className="inline-flex items-center gap-2.5 text-xs font-semibold text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+              <span>OurGo Ride · Android APK Testing Release</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-              Your Local Ride, <br />
-              <span className="text-blue-600">Made Simpler.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
+              Your OurGo Ride, <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600">
+                Made Simpler.
+              </span>
             </h1>
             
             <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
-              LocalRide connects passengers with neighborhood auto-rickshaws, e-rickshaws, and local drivers. Built specifically for everyday local journeys without corporate middleman surcharges.
+              <strong>OurGo Ride</strong> connects passengers directly with neighborhood auto-rickshaws, e-rickshaws, and local drivers. Built specifically for everyday local journeys without corporate middleman surcharges.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 to="/download"
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-xl shadow-sm transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-sky-500 hover:bg-sky-600 active:bg-sky-700 rounded-xl shadow-sm transition-all"
               >
                 <Download className="w-5 h-5" />
                 <span>Download APK</span>
@@ -45,7 +49,7 @@ export const HomePage: React.FC = () => {
               
               <Link
                 to="/features"
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-semibold text-slate-700 hover:text-blue-600 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-base font-semibold text-slate-700 hover:text-sky-600 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl transition-all"
               >
                 <span>Explore Features</span>
                 <ArrowRight className="w-4 h-4" />
@@ -57,12 +61,12 @@ export const HomePage: React.FC = () => {
               <span aria-hidden="true">·</span>
               <span>Direct APK install</span>
               <span aria-hidden="true">·</span>
-              <span>Public release tracking</span>
+              <span>Official release builds</span>
             </div>
           </div>
 
           <div className="lg:col-span-6 flex justify-center">
-            <div className="w-full max-w-lg lg:max-w-none">
+            <div className="w-full max-w-lg lg:max-w-none relative">
               <HeroIllustration className="w-full h-auto drop-shadow-sm" />
             </div>
           </div>
@@ -77,33 +81,33 @@ export const HomePage: React.FC = () => {
             Designed for Both Sides of Every Journey
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-2">
-            LocalRide bridges the gap between daily commuters and neighborhood vehicle operators.
+            OurGo Ride bridges the gap between daily commuters and neighborhood vehicle operators.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Passenger Card */}
-          <div className="p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm transition-all flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-white border border-slate-200 hover:border-sky-300 shadow-sm transition-all flex flex-col justify-between">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-6">
                 <UserCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">For Passengers</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">OurGo for Passengers</h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
                 Find and request available local rides right from your neighborhood stand or doorstep. Avoid waiting on street corners or haggling under uncertain conditions.
               </p>
               
               <ul className="space-y-2.5 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>View nearby auto-rickshaws, e-rickshaws, and taxis</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>Submit simple ride pickup and drop requests</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>Direct communication with the assigned driver</span>
                 </li>
               </ul>
@@ -111,34 +115,34 @@ export const HomePage: React.FC = () => {
 
             <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xs text-slate-500">Passenger experience in active testing</span>
-              <Link to="/features" className="text-xs font-semibold text-blue-600 hover:text-blue-700">
+              <Link to="/features" className="text-xs font-semibold text-sky-600 hover:text-sky-700">
                 Learn more →
               </Link>
             </div>
           </div>
 
           {/* Driver Card */}
-          <div className="p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 shadow-sm transition-all flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-white border border-slate-200 hover:border-sky-300 shadow-sm transition-all flex flex-col justify-between">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-6">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">For Drivers</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">OurGo for Drivers</h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
                 Make your vehicle available to passengers nearby without paying heavy commission fees to distant intermediaries. Keep your local autonomy.
               </p>
               
               <ul className="space-y-2.5 text-sm text-slate-700">
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>Toggle availability status when ready to accept rides</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>Receive direct booking alerts from nearby passengers</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-600 mt-2 shrink-0"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500 mt-2 shrink-0"></span>
                   <span>Direct fare settlements with riders</span>
                 </li>
               </ul>
@@ -146,7 +150,7 @@ export const HomePage: React.FC = () => {
 
             <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xs text-slate-500">Driver verification module in development</span>
-              <Link to="/features" className="text-xs font-semibold text-blue-600 hover:text-blue-700">
+              <Link to="/features" className="text-xs font-semibold text-sky-600 hover:text-sky-700">
                 Driver roadmap →
               </Link>
             </div>
@@ -154,17 +158,17 @@ export const HomePage: React.FC = () => {
         </div>
 
         <p className="mt-4 text-center text-xs text-slate-500">
-          Notice: Features are subject to current Android APK build release stage and local area availability.
+          Notice: Features are subject to current OurGo Ride Android APK build release stage and local area availability.
         </p>
       </section>
 
-      {/* 3. How LocalRide Works */}
+      {/* 3. How OurGo Works */}
       <section className="bg-slate-50 py-16 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-              How LocalRide Works
+              How OurGo Works
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2">
               A straightforward three-step process built for speed and clarity on any Android device.
@@ -177,8 +181,8 @@ export const HomePage: React.FC = () => {
               <div className="mb-4">
                 <StepOneIllustration className="w-20 h-20" />
               </div>
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Step 1</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Open LocalRide</h3>
+              <span className="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Step 1</span>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Open OurGo</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Launch the application on your Android phone and select whether you are requesting a ride or offering local transport.
               </p>
@@ -189,7 +193,7 @@ export const HomePage: React.FC = () => {
               <div className="mb-4">
                 <StepTwoIllustration className="w-20 h-20" />
               </div>
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Step 2</span>
+              <span className="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Step 2</span>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Explore & Request</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Check available vehicles around your pickup location, or as a driver, receive incoming ride requests in your vicinity.
@@ -201,7 +205,7 @@ export const HomePage: React.FC = () => {
               <div className="mb-4">
                 <StepThreeIllustration className="w-20 h-20" />
               </div>
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">Step 3</span>
+              <span className="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Step 3</span>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Connect & Ride</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Confirm ride terms, connect directly with each other, and complete your local journey with clear mutual understanding.
@@ -225,7 +229,7 @@ export const HomePage: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Auto-rickshaw */}
-          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-blue-300 transition-all">
+          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-sky-300 transition-all">
             <AutoRickshawIllustration className="w-full h-44 object-cover" />
             <div className="p-5">
               <h3 className="text-lg font-bold text-slate-900 mb-1">Auto-rickshaw</h3>
@@ -269,18 +273,18 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-6 p-4 rounded-xl bg-blue-50/70 border border-blue-100 text-center">
-          <p className="text-xs text-blue-900">
-            <strong>Availability Note:</strong> Specific vehicle categories displayed in the app depend on your geographical service area, local licensing, and ongoing app version development.
+        <div className="mt-6 p-4 rounded-xl bg-sky-50/70 border border-sky-100 text-center">
+          <p className="text-xs text-sky-900">
+            <strong>Availability Note:</strong> Specific vehicle categories displayed in the app depend on your geographical service area, local licensing, and ongoing OurGo Ride app version development.
           </p>
         </div>
       </section>
 
-      {/* 5. Why LocalRide */}
+      {/* 5. Why OurGo Ride */}
       <section className="bg-white py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-            Why LocalRide?
+            Why OurGo Ride?
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-2">
             Built with honest principles focused squarely on everyday community needs.
@@ -289,7 +293,7 @@ export const HomePage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50/50">
-            <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
               <Smartphone className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-1.5">Simple Experience</h3>
@@ -299,17 +303,17 @@ export const HomePage: React.FC = () => {
           </div>
 
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50/50">
-            <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
               <Compass className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-1.5">Local Transport Focus</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Tailored specifically to auto-rickshaws and neighborhood transit modes commonly ignored by global apps.
+              Tailored specifically to auto-rickshaws, e-rickshaws, and neighborhood transit modes commonly ignored by global apps.
             </p>
           </div>
 
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50/50">
-            <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
               <Clock className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-1.5">Lightweight & Fast</h3>
@@ -319,7 +323,7 @@ export const HomePage: React.FC = () => {
           </div>
 
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50/50">
-            <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center mb-4">
               <RefreshCw className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-1.5">Ongoing Development</h3>
@@ -332,24 +336,31 @@ export const HomePage: React.FC = () => {
 
       {/* 6. Download CTA */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 sm:p-12 text-white shadow-lg text-center relative overflow-hidden">
+        <div className="bg-gradient-to-r from-[#050B17] via-[#0A1128] to-[#0A1A3F] border border-sky-500/20 rounded-3xl p-8 sm:p-12 text-white shadow-xl text-center relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto space-y-6">
+            <div className="w-16 h-16 rounded-2xl mx-auto p-1 bg-white/10 backdrop-blur-md ring-1 ring-white/20 shadow-lg">
+              <img
+                src={logoSrc}
+                alt="OurGo Ride Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              Ready to Try LocalRide?
+              Ready to Try OurGo Ride?
             </h2>
-            <p className="text-blue-100 text-base leading-relaxed">
-              Download the latest Android APK directly to your device and test the upcoming wave of local transportation.
+            <p className="text-sky-100 text-base leading-relaxed">
+              Download the latest Android APK directly to your device and test the upcoming wave of local community transportation.
             </p>
             <div>
               <Link
                 to="/download"
-                className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-blue-700 bg-white hover:bg-blue-50 active:bg-blue-100 rounded-xl shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-white hover:bg-sky-50 active:bg-sky-100 rounded-xl shadow-md transition-all"
               >
-                <Download className="w-5 h-5" />
+                <Download className="w-5 h-5 text-sky-600" />
                 <span>Download APK</span>
               </Link>
             </div>
-            <p className="text-xs text-blue-200">
+            <p className="text-xs text-sky-200/80">
               Free APK download · No registration required to explore releases
             </p>
           </div>

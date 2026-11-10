@@ -189,7 +189,7 @@ export const FeaturesPage: React.FC = () => {
           <span>Product Capabilities & Roadmap</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          LocalRide Features & Development Status
+          OurGo Ride Features & Development Status
         </h1>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
           We believe in complete transparency. Below is an honest breakdown of what is currently operational in our Android APK, what is undergoing active development, and what is planned for future releases.
@@ -201,7 +201,7 @@ export const FeaturesPage: React.FC = () => {
         <div className="flex items-start gap-3">
           <AlertTriangle className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
           <div className="text-xs sm:text-sm leading-relaxed">
-            <strong>Honest Development Policy:</strong> LocalRide does not claim demo UI screens are completed backend cloud services. Check the status badge on each card below to understand current implementation levels.
+            <strong>Honest Development Policy:</strong> OurGo Ride does not claim demo UI screens are completed backend cloud services. Check the status badge on each card below to understand current implementation levels.
           </div>
         </div>
         <Link
@@ -289,7 +289,7 @@ export const FeaturesPage: React.FC = () => {
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-              <span>LocalRide Android APK</span>
+              <span>OurGo Ride Android APK</span>
               <span className="font-mono text-[11px] text-slate-400">#{item.id}</span>
             </div>
           </div>

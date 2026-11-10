@@ -25,7 +25,7 @@ export const TermsPage: React.FC = () => {
         <div className="text-xs sm:text-sm leading-relaxed space-y-1">
           <strong className="font-bold">[Developer Review Notice]:</strong>
           <p className="text-amber-800">
-            This document outlines preliminary terms for testing the LocalRide Android APK and browsing this website. Prior to formal public launch or commercial fare transactions, these terms must be audited by legal counsel.
+            This document outlines preliminary terms for testing the OurGo Ride Android APK and browsing this website. Prior to formal public launch or commercial fare transactions, these terms must be audited by legal counsel.
           </p>
         </div>
       </div>
@@ -36,14 +36,14 @@ export const TermsPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">1. Acceptance of Terms</h2>
           <p>
-            By accessing this website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) or downloading the LocalRide Android application package (.apk), you acknowledge and agree to these preliminary terms. If you disagree with any portion of these terms, please refrain from downloading or installing the software.
+            By accessing this website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) or downloading the OurGo Ride Android application package (.apk), you acknowledge and agree to these preliminary terms. If you disagree with any portion of these terms, please refrain from downloading or installing the software.
           </p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">2. Development & Testing Software Stage</h2>
           <p>
-            LocalRide is currently provided as experimental software in active development. Releases are made available for community testing, feedback collection, and demonstration of local ride-matching workflows.
+            OurGo Ride is currently provided as experimental software in active development. Releases are made available for community testing, feedback collection, and demonstration of local ride-matching workflows.
           </p>
           <p>
             Features, user interfaces, and network services are subject to continuous modification, refinement, or temporary interruption without prior notice.
@@ -58,28 +58,28 @@ export const TermsPage: React.FC = () => {
           <ul className="list-disc list-inside space-y-1.5 pl-2 text-slate-600">
             <li>You agree to verify that downloads originate exclusively from our official GitHub repository (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd/LocalRide-Download</span>).</li>
             <li>You assume responsibility for installing third-party APK packages on your handset.</li>
-            <li>LocalRide does not provide express warranties regarding uninterrupted uptime or fault-free execution on all custom Android OS distributions.</li>
+            <li>OurGo Ride does not provide express warranties regarding uninterrupted uptime or fault-free execution on all custom Android OS distributions.</li>
           </ul>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">4. Device Compatibility Limitations</h2>
           <p>
-            While LocalRide is engineered to support a broad spectrum of Android smartphones, performance and sensor accuracy (such as GPS satellite locks and cellular data handoffs) depend on individual hardware specifications, regional carrier coverage, and device battery optimization policies.
+            While OurGo Ride is engineered to support a broad spectrum of Android smartphones, performance and sensor accuracy (such as GPS satellite locks and cellular data handoffs) depend on individual hardware specifications, regional carrier coverage, and device battery optimization policies.
           </p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">5. Passenger and Driver Discretion</h2>
           <p>
-            LocalRide functions as a software interface to facilitate mutual coordination between riders and local drivers. LocalRide does not employ drivers, own transportation vehicles, or dictate independent operating schedules. Users are encouraged to exercise ordinary prudence and adhere to regional traffic and safety laws.
+            OurGo Ride functions as a software interface to facilitate mutual coordination between riders and local drivers. OurGo Ride does not employ drivers, own transportation vehicles, or dictate independent operating schedules. Users are encouraged to exercise ordinary prudence and adhere to regional traffic and safety laws.
           </p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">6. Intellectual Property & Repository Integrity</h2>
           <p>
-            The branding, design, and website code of LocalRide are governed by applicable open-source and copyright principles. Android application source code remains strictly maintained in the private repository and is not distributed alongside the public website repository.
+            The branding, design, and website code of OurGo Ride are governed by applicable open-source and copyright principles. Android application source code remains strictly maintained in the private repository and is not distributed alongside the public website repository.
           </p>
         </section>
 

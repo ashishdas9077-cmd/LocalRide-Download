@@ -16,19 +16,19 @@ export const FaqPage: React.FC = () => {
   const faqs: FaqItem[] = [
     {
       category: 'General',
-      question: 'What is LocalRide?',
+      question: 'What is OurGo Ride?',
       answer: (
         <p>
-          LocalRide is a local ride-booking application developed for Android devices. It connects local passengers with nearby community transport operators, including auto-rickshaws, e-rickshaws, and local taxis, providing direct and convenient neighborhood travel.
+          OurGo Ride (short brand: OurGo) is a local ride-booking application developed for Android devices. It connects local passengers with nearby community transport operators, including auto-rickshaws, e-rickshaws, and local taxis, providing direct and convenient neighborhood travel.
         </p>
       ),
     },
     {
       category: 'General',
-      question: 'Is LocalRide available on Android?',
+      question: 'Is OurGo Ride available on Android?',
       answer: (
         <p>
-          Yes. LocalRide is currently developed exclusively as an Android application. It can be installed on Android devices running Android 7.0 (Nougat) or higher via direct APK download.
+          Yes. OurGo Ride is currently developed exclusively as an Android application. It can be installed on Android devices running Android 7.0 (Nougat) or higher via direct APK download.
         </p>
       ),
     },
@@ -59,14 +59,14 @@ export const FaqPage: React.FC = () => {
             <li>Download the <span className="font-mono text-slate-900">LocalRide.apk</span> file from our Download page.</li>
             <li>Tap the completed download alert in your notification bar or file manager.</li>
             <li>If Android prompts you that installation from unknown sources is blocked, tap <strong>Settings</strong> and toggle on <strong>"Allow from this source"</strong> for your browser or file manager.</li>
-            <li>Return to the prompt and tap <strong>Install</strong>. Once completed, you can open LocalRide from your home screen.</li>
+            <li>Return to the prompt and tap <strong>Install</strong>. Once completed, you can open OurGo Ride from your home screen.</li>
           </ol>
         </div>
       ),
     },
     {
       category: 'Installation',
-      question: 'Where can I find older versions of LocalRide?',
+      question: 'Where can I find older versions of OurGo Ride?',
       answer: (
         <p>
           All published releases remain available on the{' '}
@@ -79,10 +79,10 @@ export const FaqPage: React.FC = () => {
     },
     {
       category: 'General',
-      question: 'Is LocalRide still under development?',
+      question: 'Is OurGo Ride still under development?',
       answer: (
         <p>
-          Yes. LocalRide is actively being engineered. We follow an iterative release cycle where new features, bug fixes, and performance upgrades are published as new APK releases on GitHub. You can review current versus planned features on our{' '}
+          Yes. OurGo Ride is actively being engineered. We follow an iterative release cycle where new features, bug fixes, and performance upgrades are published as new APK releases on GitHub. You can review current versus planned features on our{' '}
           <Link to="/features" className="text-blue-600 font-semibold hover:underline">
             Features Page
           </Link>
@@ -131,16 +131,16 @@ export const FaqPage: React.FC = () => {
     },
     {
       category: 'General',
-      question: 'Why is LocalRide distributed as an APK rather than through the Google Play Store?',
+      question: 'Why is OurGo Ride distributed as an APK rather than through the Google Play Store?',
       answer: (
         <p>
-          LocalRide is currently in active development and testing. Direct APK distribution via GitHub Releases allows rapid deployment of updates directly to community testers without store review delays or developer fee overhead. An official Play Store listing will be evaluated once the core feature set is finalized and stabilized.
+          OurGo Ride is currently in active development and testing. Direct APK distribution via GitHub Releases allows rapid deployment of updates directly to community testers without store review delays or developer fee overhead. An official Play Store listing will be evaluated once the core feature set is finalized and stabilized.
         </p>
       ),
     },
     {
       category: 'Troubleshooting',
-      question: 'Is downloading and installing the LocalRide APK safe?',
+      question: 'Is downloading and installing the OurGo Ride APK safe?',
       answer: (
         <p>
           Yes, provided you download only from our official website or official GitHub repository (<span className="font-mono text-slate-800">ashishdas9077-cmd/LocalRide-Download</span>). The APK contains only the genuine Android application binary and does not include adware or unauthorized tracking components.
@@ -177,7 +177,7 @@ export const FaqPage: React.FC = () => {
           Got Questions? We Have Answers.
         </h1>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
-          Find clear, direct answers about LocalRide, Android APK installation, compatibility, and troubleshooting.
+          Find clear, direct answers about OurGo Ride, Android APK installation, compatibility, and troubleshooting.
         </p>
       </div>
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-// Hero illustration: Clean smartphone with LocalRide map, route line, local transport pin & friendly community badge
+// Hero illustration: Clean smartphone with OurGo Ride map, route line, local transport pin & friendly community badge
 export const HeroIllustration: React.FC<{ className?: string }> = ({ className = 'w-full h-auto' }) => (
-  <svg viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="LocalRide App Interface Illustration">
+  <svg viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="OurGo Ride App Interface Illustration">
     {/* Soft subtle radial ambient backdrop */}
     <circle cx="320" cy="240" r="210" fill="#EFF6FF" />
     <circle cx="480" cy="140" r="70" fill="#DBEAFE" fillOpacity="0.6" />
@@ -14,7 +14,7 @@ export const HeroIllustration: React.FC<{ className?: string }> = ({ className =
     {/* Smartphone Frame */}
     <g filter="drop-shadow(0 20px 25px rgba(37, 99, 235, 0.12))">
       {/* Phone outer body */}
-      <rect x="200" y="50" width="240" height="400" rx="36" fill="#0F172A" />
+      <rect x="200" y="50" width="240" height="400" rx="36" fill="#0A1128" />
       {/* Phone screen */}
       <rect x="210" y="60" width="220" height="380" rx="28" fill="#FFFFFF" />
       
@@ -30,13 +30,13 @@ export const HeroIllustration: React.FC<{ className?: string }> = ({ className =
       <path d="M350 90 L 340 295" stroke="#E2E8F0" strokeWidth="10" strokeLinecap="round" />
       
       {/* Active Route Highlight */}
-      <path d="M260 230 C 285 230 290 180 340 160" stroke="#2563EB" strokeWidth="5" strokeLinecap="round" />
-      <circle cx="260" cy="230" r="5" fill="#2563EB" />
-      <circle cx="340" cy="160" r="6" fill="#1D4ED8" stroke="#FFFFFF" strokeWidth="2" />
+      <path d="M260 230 C 285 230 290 180 340 160" stroke="#0284C7" strokeWidth="5" strokeLinecap="round" />
+      <circle cx="260" cy="230" r="5" fill="#0284C7" />
+      <circle cx="340" cy="160" r="6" fill="#0369A1" stroke="#FFFFFF" strokeWidth="2" />
       
       {/* Vehicle Marker Pin in Map */}
       <g transform="translate(328, 130)">
-        <path d="M12 0 C5.37 0 0 5.37 0 12 C0 21 12 30 12 30 C12 30 24 21 24 12 C24 5.37 18.63 0 12 0 Z" fill="#2563EB" />
+        <path d="M12 0 C5.37 0 0 5.37 0 12 C0 21 12 30 12 30 C12 30 24 21 24 12 C24 5.37 18.63 0 12 0 Z" fill="#0284C7" />
         <circle cx="12" cy="10" r="5" fill="#FFFFFF" />
       </g>
       
@@ -45,9 +45,9 @@ export const HeroIllustration: React.FC<{ className?: string }> = ({ className =
         <rect width="196" height="114" rx="14" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1.5" />
         
         {/* Ride Selection Mini Category */}
-        <rect x="12" y="12" width="50" height="34" rx="8" fill="#EFF6FF" stroke="#BFDBFE" strokeWidth="1" />
-        <circle cx="26" cy="24" r="6" fill="#2563EB" />
-        <text x="36" y="27" fill="#1E40AF" fontSize="9" fontWeight="700">Auto</text>
+        <rect x="12" y="12" width="50" height="34" rx="8" fill="#F0F9FF" stroke="#BAE6FD" strokeWidth="1" />
+        <circle cx="26" cy="24" r="6" fill="#0284C7" />
+        <text x="36" y="27" fill="#0369A1" fontSize="9" fontWeight="700">Auto</text>
         
         <rect x="70" y="12" width="52" height="34" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
         <circle cx="82" cy="24" r="6" fill="#64748B" />
@@ -58,8 +58,8 @@ export const HeroIllustration: React.FC<{ className?: string }> = ({ className =
         <text x="153" y="27" fill="#475569" fontSize="9" fontWeight="600">Cab</text>
 
         {/* Action Button */}
-        <rect x="12" y="58" width="172" height="28" rx="8" fill="#2563EB" />
-        <text x="56" y="76" fill="#FFFFFF" fontSize="11" fontWeight="700">Request Local Ride</text>
+        <rect x="12" y="58" width="172" height="28" rx="8" fill="#0284C7" />
+        <text x="52" y="76" fill="#FFFFFF" fontSize="11" fontWeight="700">Request OurGo Ride</text>
         <text x="12" y="100" fill="#64748B" fontSize="9">Nearby drivers active</text>
       </g>
     </g>
@@ -236,7 +236,7 @@ export const OtherTransportIllustration: React.FC<{ className?: string }> = ({ c
   </svg>
 );
 
-// How It Works Step 1 Illustration: Open LocalRide
+// How It Works Step 1 Illustration: Open OurGo
 export const StepOneIllustration: React.FC<{ className?: string }> = ({ className = 'w-24 h-24' }) => (
   <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-label="Step 1 Illustration">
     <rect width="96" height="96" rx="20" fill="#EFF6FF" />

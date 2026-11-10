@@ -1,6 +1,6 @@
-# LocalRide – Your Local Ride Booking App
+# OurGo Ride – Your Local Ride Booking App
 
-The official website and APK download distribution portal for **LocalRide**, a community-focused local ride-booking Android application connecting passengers with nearby auto-rickshaws, e-rickshaws, and local taxis.
+The official website and APK download distribution portal for **OurGo Ride** (short brand: **OurGo**), a community-focused local ride-booking Android application connecting passengers with nearby auto-rickshaws, e-rickshaws, and local taxis.
 
 - **Public Website URL:** [https://ashishdas9077-cmd.github.io/LocalRide-Download/](https://ashishdas9077-cmd.github.io/LocalRide-Download/)
 - **Public Website Repository:** `ashishdas9077-cmd/LocalRide-Download`
@@ -15,7 +15,7 @@ This website is a modern, responsive, high-performance static web application bu
 ### Key Features
 1. **Dynamic APK Releases:** Automatically queries the public GitHub Releases API (`https://api.github.com/repos/ashishdas9077-cmd/LocalRide-Download/releases`) to display the latest stable release, download links, file sizes, and full version history without manual website code updates.
 2. **HashRouter Navigation:** Ensures that internal page refreshes work reliably on GitHub Pages without requiring server-side 404 URL rewriting.
-3. **Responsive & Mobile-First:** Clean blue-and-white visual identity optimized for high clarity, fast loading on budget Android devices, and low cellular data usage.
+3. **Responsive & Mobile-First:** Clean navy-and-white visual identity with electric blue accents, optimized for high clarity, fast loading on budget Android devices, and low cellular data usage.
 4. **Lightweight Custom SVG Visuals:** Handcrafted SVG illustrations for auto-rickshaws, e-rickshaws, taxis, and app interaction flows with zero external broken image dependencies.
 5. **SEO & Social Optimization:** Pre-configured with meta tags, OpenGraph cards, Twitter cards, `robots.txt`, `sitemap.xml`, and Schema.org `SoftwareApplication` JSON-LD.
 
@@ -24,10 +24,10 @@ This website is a modern, responsive, high-performance static web application bu
 ## 📄 Website Pages
 
 The website includes all 8 core pages:
-1. **Home (`/`)**: Value proposition, Passenger & Driver feature cards, 3-step "How LocalRide Works", vehicle categories breakdown, why choose LocalRide, and Download CTA.
+1. **Home (`/`)**: Value proposition, Passenger & Driver feature cards, 3-step "How OurGo Ride Works", vehicle categories breakdown, why choose OurGo Ride, and Download CTA.
 2. **Download (`/#/download`)**: Real-time GitHub Releases integration, latest stable APK download, version history, release notes viewer, and 4-step Android APK installation instructions.
 3. **Features (`/#/features`)**: Transparent breakdown categorized into **Available Now**, **In Active Development**, and **Planned Future Roadmap**.
-4. **About (`/#/about`)**: The genuine story and mission behind LocalRide, local transportation focus, and open development principles.
+4. **About (`/#/about`)**: The genuine story and mission behind OurGo Ride, local transportation focus, and open development principles.
 5. **FAQ (`/#/faq`)**: Searchable accordion addressing Android compatibility, APK sideloading, troubleshooting, and safety.
 6. **Contact & Support (`/#/contact`)**: Guidance for reporting technical issues via GitHub Issues with a structured bug report checklist.
 7. **Privacy Policy (`/#/privacy-policy`)**: Honest disclosure covering static hosting, GitHub API queries, and device permissions.

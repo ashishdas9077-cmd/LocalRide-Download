@@ -25,7 +25,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         <div className="text-xs sm:text-sm leading-relaxed space-y-1">
           <strong className="font-bold">[Developer Review Notice]:</strong>
           <p className="text-amber-800">
-            This document represents a transparent draft policy for the static LocalRide website and preliminary Android application testing. Before launching commercial operations or collecting user identifiable data, the developer must review and adapt this policy to comply with local legal jurisdictions.
+            This document represents a transparent draft policy for the static OurGo Ride website and preliminary Android application testing. Before launching commercial operations or collecting user identifiable data, the developer must review and adapt this policy to comply with local legal jurisdictions.
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">1. Website Operations & Data Handling</h2>
           <p>
-            The LocalRide official website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) is a static web application hosted on GitHub Pages.
+            The OurGo Ride official website (<span className="font-mono text-xs text-slate-800">ashishdas9077-cmd.github.io/LocalRide-Download/</span>) is a static web application hosted on GitHub Pages.
           </p>
           <p>
             This website does not require user accounts, does not collect personal contact information, does not use advertising trackers, and does not set tracking cookies in your browser.
@@ -59,7 +59,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">3. Android Application Permissions (Draft Context)</h2>
           <p>
-            When installing and running the LocalRide Android application APK on your device:
+            When installing and running the OurGo Ride Android application APK on your device:
           </p>
           <ul className="list-disc list-inside space-y-1.5 pl-2 text-slate-600">
             <li>
@@ -84,7 +84,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         <section className="space-y-3">
           <h2 className="text-lg font-bold text-slate-900">5. Updates to this Policy</h2>
           <p>
-            As LocalRide develops and features evolve, this privacy policy will be updated to reflect concrete data practices. Significant amendments will be highlighted in the release notes of corresponding application updates.
+            As OurGo Ride develops and features evolve, this privacy policy will be updated to reflect concrete data practices. Significant amendments will be highlighted in the release notes of corresponding application updates.
           </p>
         </section>
 

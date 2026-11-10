@@ -6,6 +6,8 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  const logoSrc = `${import.meta.env.BASE_URL}assets/ourgo-logo.png`;
+
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Features', path: '/features' },
@@ -24,18 +26,25 @@ export const Navbar: React.FC = () => {
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-8">
         
-        {/* Zone 1: Brand Wordmark (Single element, no descriptor tags) */}
+        {/* Zone 1: Brand Wordmark with Official OurGo Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900 hover:text-blue-600 transition-colors whitespace-nowrap shrink-0"
-          aria-label="LocalRide Home"
+          className="flex items-center gap-2.5 hover:opacity-95 transition-opacity whitespace-nowrap shrink-0 group"
+          aria-label="OurGo Ride Home"
         >
-          <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-sm">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-            </svg>
+          <img
+            src={logoSrc}
+            alt="OurGo Ride Logo"
+            className="w-10 h-10 rounded-xl shadow-sm object-cover ring-1 ring-slate-900/10"
+          />
+          <div className="flex flex-col justify-center leading-none">
+            <span className="text-xl font-black tracking-tight text-slate-900 font-sans">
+              Our<span className="text-sky-500">Go</span>
+            </span>
+            <span className="text-[8.5px] font-bold tracking-[0.28em] text-slate-500 uppercase mt-0.5">
+              — RIDE —
+            </span>
           </div>
-          <span>LocalRide</span>
         </Link>
 
         {/* Zone 2: Navigation Links */}
@@ -46,7 +55,7 @@ export const Navbar: React.FC = () => {
               to={link.path}
               className={`whitespace-nowrap shrink-0 transition-colors py-1 ${
                 isActive(link.path)
-                  ? 'text-blue-600 font-semibold border-b-2 border-blue-600'
+                  ? 'text-sky-600 font-semibold border-b-2 border-sky-500'
                   : 'hover:text-slate-900'
               }`}
             >
@@ -59,19 +68,19 @@ export const Navbar: React.FC = () => {
         <div className="hidden sm:flex items-center gap-3 shrink-0">
           <Link
             to="/download"
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-lg shadow-sm transition-all whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-sky-500 hover:bg-sky-600 active:bg-sky-700 rounded-lg shadow-sm transition-all whitespace-nowrap shrink-0"
           >
             <Download className="w-4 h-4" />
             <span>Download APK</span>
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button (touch target >= 44px) */}
         <div className="flex md:hidden items-center">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-slate-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg"
+            className="min-w-[44px] min-h-[44px] p-2.5 text-slate-700 hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 rounded-lg flex items-center justify-center"
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle Navigation Menu"
           >
@@ -90,7 +99,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setMobileMenuOpen(false)}
               className={`block px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
                 isActive(link.path)
-                  ? 'bg-blue-50 text-blue-600 font-semibold'
+                  ? 'bg-sky-50 text-sky-600 font-semibold'
                   : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
               }`}
             >
@@ -101,7 +110,7 @@ export const Navbar: React.FC = () => {
             <Link
               to="/download"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm transition-all"
+              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-base font-semibold text-white bg-sky-500 hover:bg-sky-600 rounded-lg shadow-sm transition-all"
             >
               <Download className="w-5 h-5" />
               <span>Download APK</span>

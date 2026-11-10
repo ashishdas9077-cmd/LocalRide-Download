@@ -16,7 +16,7 @@ export const ContactPage: React.FC = () => {
           Contact & Technical Support
         </h1>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto">
-          LocalRide is currently in community testing. Official direct customer contact channels are being prepared as the project scales.
+          OurGo Ride is currently in community testing. Official direct customer contact channels are being prepared as the project scales.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ export const ContactPage: React.FC = () => {
               <span>e.g., Android 11, 12, 13, 14</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-semibold text-slate-800 min-w-[130px]">3. LocalRide Build:</span>
+              <span className="font-semibold text-slate-800 min-w-[130px]">3. OurGo Ride Build:</span>
               <span>The APK version tag (e.g., v1.0.0 or commit release date)</span>
             </li>
             <li className="flex items-start gap-2">

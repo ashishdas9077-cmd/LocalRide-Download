@@ -13,18 +13,18 @@ export const AboutPage: React.FC = () => {
           <span>Our Story & Mission</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          About LocalRide
+          About OurGo Ride
         </h1>
         <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
           A focused project addressing everyday local mobility needs through open Android software and direct community connection.
         </p>
       </div>
 
-      {/* 2. What LocalRide Is */}
+      {/* 2. What OurGo Ride Is */}
       <section className="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-        <h2 className="text-xl font-bold text-slate-900">What is LocalRide?</h2>
+        <h2 className="text-xl font-bold text-slate-900">What is OurGo Ride?</h2>
         <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
-          LocalRide is an Android-based ride-booking application built to make neighborhood trips convenient, fair, and directly accessible. While global ride-hailing services focus predominantly on premium city cars and take substantial commissions, LocalRide is tailored specifically around local transport: auto-rickshaws, e-rickshaws, and community taxi drivers.
+          OurGo Ride (short brand: OurGo) is an Android-based ride-booking application built to make neighborhood trips convenient, fair, and directly accessible. While global ride-hailing services focus predominantly on premium city cars and take substantial commissions, OurGo is tailored specifically around local transport: auto-rickshaws, e-rickshaws, and community taxi drivers.
         </p>
         <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
           Our goal is not to build a bloated commercial monopoly, but to provide a clean, dependable digital tool that passengers and drivers can use directly in their towns and neighborhoods.
@@ -34,7 +34,7 @@ export const AboutPage: React.FC = () => {
       {/* 3. Why It Is Being Developed */}
       <section className="space-y-6">
         <div className="max-w-2xl">
-          <h2 className="text-xl font-bold text-slate-900">Why LocalRide is Being Developed</h2>
+          <h2 className="text-xl font-bold text-slate-900">Why OurGo Ride is Being Developed</h2>
           <p className="text-sm text-slate-600 mt-1">
             Addressing real friction points observed in daily commuter transit.
           </p>
@@ -47,7 +47,7 @@ export const AboutPage: React.FC = () => {
             </div>
             <h3 className="text-base font-bold text-slate-900">Connecting Commuters & Stands</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              In many localities, passengers walk long distances to find a rickshaw or wait in the rain, while drivers sit waiting at stands without knowing someone around the corner needs a ride. LocalRide bridges this simple information gap.
+              In many localities, passengers walk long distances to find a rickshaw or wait in the rain, while drivers sit waiting at stands without knowing someone around the corner needs a ride. OurGo bridges this simple information gap.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export const AboutPage: React.FC = () => {
             </div>
             <h3 className="text-base font-bold text-slate-900">Dignity for Local Drivers</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Neighborhood drivers work tirelessly in difficult weather. Traditional platforms often take 20% to 30% of their hard-earned income. LocalRide explores direct connections where the driver keeps the fruit of their labor.
+              Neighborhood drivers work tirelessly in difficult weather. Traditional platforms often take 20% to 30% of their hard-earned income. OurGo explores direct connections where the driver keeps the fruit of their labor.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ export const AboutPage: React.FC = () => {
       {/* 5. Direct CTA */}
       <div className="p-6 rounded-2xl bg-blue-50 border border-blue-200 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h3 className="text-base font-bold text-blue-950">Help Test LocalRide</h3>
+          <h3 className="text-base font-bold text-blue-950">Help Test OurGo Ride</h3>
           <p className="text-xs sm:text-sm text-blue-800">
             Download the latest APK and test the features on your Android phone.
           </p>
